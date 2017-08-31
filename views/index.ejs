@@ -9,6 +9,12 @@
 </head>
 <body>
   <h1>hello wolrd</h1>
+
+  <form action="/" method="post">
+    <input type="URL" name="logUrl">
+    <input type="submit" value="전송">
+  </form>
+  
   <table>
     <thead>
       <tr>
@@ -17,7 +23,7 @@
       </tr>
     </thead>
     <tbody>
-    <!-- 데이터를 반복해서 넣을 때 forEach를 사용한다. -->
+    <!-- data라는 변수 객체 안에서 데이터를 반복해서 넣을 때 forEach(정의-> 배열마다 돌며 한번씩 함수를 실행한다.)를 사용한다. -->
     <% data.forEach(item => { %>
       <tr>
         <td><%= item.longUrl %></td>
